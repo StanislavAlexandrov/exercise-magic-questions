@@ -1,0 +1,38 @@
+body {
+    text-align: center;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+#magic-button {
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#magic-container {
+    position: relative;
+    height: 300px; /* adjust according to the height of your gif and text */
+    width: 500px; /* adjust according to the width of your gif and text */
+    margin: 20px auto;
+}
+
+#magic-text,
+#magic-gif {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+#magic-text.show,
+#magic-gif.fade-out {
+    transition: opacity 2s;
+    opacity: 1;
+}
+
+.fade-out {
+    transition: opacity 2s;
+    opacity: 0 !important;
+}
